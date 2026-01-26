@@ -6,10 +6,10 @@ from PIL import Image, ImageTk
 
 config = {
     "host" : "127.0.0.1",
-    "port" : 3306,
-    "user" : "andre",
-    "password": "12345",
-    "database":"gerenciador"
+    "port" : ,
+    "user" : "",
+    "password": "",
+    "database":""
     }
 
 try: 
@@ -50,5 +50,6 @@ button.pack()
 button.place(x=350, y=95, width=150, height=60)
 button1.place(x=350, y=240, width= 150, height =60)
 root.mainloop()
+
 
 
