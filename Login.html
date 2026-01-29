@@ -1,37 +1,57 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>WEBSITE-CHAMADOS TI.</title>
+  <meta charset="UTF-8">
+  <title>WEBSITE - CHAMADOS TI</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Banner no topo */
+    .banner-topo img {
+      width: 45%;
+      height: 30;
+      display: block;
+    }
+
+    /* Conteúdo */
+    .conteudo {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Faça Login para inciar um chamado no sistema.</h1>
-<p>Bem vindo ao site.</p>
-
- <form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="C:\Users\André Felipe01\Desktop\DESENVOLVIMENTO WEB/L" alt="" class="L">
+  <!-- Banner -->
+  <div class="banner-topo">
+    <img src="banner.png" alt="S. Soluções de TI">
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+  <!-- Conteúdo do site -->
+  <div class="conteudo">
+    <h1>BEM VINDO A S.SOLUÇÕES DE TI</h1>
+	<nav class = "navbar">
+	<ul>
+	  <li><a href="">INICIO</a></li>
+	  <li><a href="">CHAMADOS</a></li>
+	  <li><a href="">SOBRE NOS</a></li>
+	  <li><a href="">CONTATO</a></li>
+	</ul>
+	</nav>
+	<main>
+	<h3>Essa é nossa pagina inicial</h3>
+	<p>Bem vindo</p>
+	</main>
+    <p>Bem-vindo ao site.<br> ENTRE EM CONTATO PELO NOSSO NUMERO : 1198032311</p>
+    <h2>Conectando o mundo</h2>
+    <p>Para verificar chamados ou acessar nossos serviços entre no link abaixo</p>
+    <a href="Login.html">Visite!</a>
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form> 
 
 </body>
-</html> 
+</html>
