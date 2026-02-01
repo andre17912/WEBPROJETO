@@ -1,9 +1,9 @@
 <?php
-$host = "127.0.0.1";
-$port = "3306";
-$db   = "Chamados";
-$user = "andre";
-$pass = "12345";
+$host = "NOSERVIDOR";
+$port = "NOSERVIDOR";
+$db   = "NOSERVIDOR";
+$user = "NOSERVIDOR";
+$pass = "NOSERVIDOR";
 
 try {
     $pdo = new PDO(
@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // ✅ Comparação direta de texto puro
+    
     if ($user && $password === $user['password_hash']) {
         echo "✅ Login bem-sucedido!";
-        // Aqui você pode iniciar sessão ou redirecionar
+      
         exit();
     } else {
         header("Location: Dados.php?error=1");
@@ -40,3 +40,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
